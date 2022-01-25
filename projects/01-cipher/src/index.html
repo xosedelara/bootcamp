@@ -2,13 +2,26 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width">
+    <title>cryptor</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="index.js" type="module"></script>
+    <div class="tabTitle">cipher-it</div>
+    <h1 class="welcome" id="returnMsg">Bienvenidx a tu nueva aplicación de cifrado.</h1>
+    <p class="explanation" id="returnText">Con esta aplicación podrás añadir seguridad a mensajes que mandes desde cualquier plataforma, 
+      solo ingresa el texto que desees cifrar y una clave (deberá ser un número que tu interlocutorx conozca); 
+      da click en el botón "cifrar" y listo, tienes un texto cifrado que podrás mandar a tus contactos.<br><br>
+      Si recibiste un texto previamente cifrado sólo tendrás que ingresarlo junto con la clave numérica
+      que acordaste con tu interlocutorx, seguido de un click en el botón "descifrar".</p>
+      <div class="tabCipher">
+      <h2 class="indication1">Ingresa un texto</h2>
+      <textarea class="textInput" id="inText" rows="5" columns="80"></textarea>
+      <h3 class="indication2">Ingresa la clave numérica</h3>
+      <input placeholder="ingrese clave" type="number" id="clueOne">
+      </div>
+      <div class="buttons"><button id="encodeBtn">Cifrar</button><button id="decodeBtn">Descifrar</button></div>
+      <footer>Xos-2022</footer>
+  <script src="index.js" type="module"></script>
   </body>
 </html>
